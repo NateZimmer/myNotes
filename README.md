@@ -75,3 +75,15 @@ https://www.freecodecamp.org/news/the-easy-way-to-set-up-docker-on-a-raspberry-p
 ```console
 curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
 ```
+
+Useful docker links 
+
+| Desc | Link | 
+| ----- | ----- | 
+| Docker list for ARM | https://hub.docker.com/u/arm32v7 | 
+| Docker ref w/ influx & grafana | https://hub.docker.com/r/philhawthorne/docker-influxdb-grafana/ | 
+
+
+
+
+
