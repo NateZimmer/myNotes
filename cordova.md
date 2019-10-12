@@ -28,3 +28,19 @@ After ensuring your device is `adb` authorized, the following will work.
 ```
 cordova run android
 ```
+
+## Bluetooth
+
+Bluetooth plugin: https://github.com/randdusing/cordova-plugin-bluetoothle 
+
+Add:
+
+```
+cordova plugin add cordova-plugin-bluetoothle
+```
+
+Remove:
+
+```
+cordova plugin rm cordova-plugin-bluetoothle
+```
