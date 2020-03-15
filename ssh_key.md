@@ -23,3 +23,11 @@ To transfer the key to the server, one can use the following command:
 ```
 cat myKey.pub | (ssh [server_user]@[server_url] -p [server_port] "cat >> ~/.ssh/authorized_keys")
 ```
+
+### Remote tunnel 
+
+```
+ssh -R [random port]:localhost:22 [server_user]@[server_url] -p [server_port] -i myKey
+```
+
+
