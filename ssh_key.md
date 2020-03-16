@@ -1,4 +1,4 @@
-### SSH Key Workflow
+### SSH key workflow
 
 The following will generate a `myKey` file which is the private key that you keep on the client. Note it has no pass phrase and will also create a `myKey.pub`.
 
@@ -26,8 +26,20 @@ cat myKey.pub | (ssh [server_user]@[server_url] -p [server_port] "cat >> ~/.ssh/
 
 ### Remote tunnel 
 
+Reference: https://www.howtoforge.com/reverse-ssh-tunneling 
+
 ```
 ssh -R [random port]:localhost:22 [server_user]@[server_url] -p [server_port] -i myKey
 ```
+
+### Chain socks proxy 
+
+Reference: https://superuser.com/questions/836194/how-to-chain-socks-proxies 
+
+```
+ssh -tt -v -L[your_client_proxy_port]:localhost:[tunnel_port] [user_b]@[url_b] ssh -t -D [tunnel_port] [user_c]@[url_c]
+```
+
+> Note, firefox allows for proxying to a localhost:[your_client_proxy_port] . It also allows for DNS through the proxy unlike the standard windows 
 
 
