@@ -29,8 +29,10 @@ cat myKey.pub | (ssh [server_user]@[server_url] -p [server_port] "cat >> ~/.ssh/
 Reference: https://www.howtoforge.com/reverse-ssh-tunneling 
 
 ```
-ssh -R [random port]:localhost:22 [server_user]@[server_url] -p [server_port] -i myKey
+ssh -f -N -R [random port]:localhost:22 [server_user]@[server_url] -p [server_port] -i myKey
 ```
+
+- `-f -N` Executes in background 
 
 ### Chain socks proxy 
 
