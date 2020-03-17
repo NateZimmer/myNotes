@@ -44,4 +44,10 @@ ssh -tt -v -L[your_client_proxy_port]:localhost:[tunnel_port] [user_b]@[url_b] s
 
 > Note, firefox allows for proxying to a localhost:[your_client_proxy_port] . It also allows for DNS through the proxy unlike the standard windows 
 
+### Setting GIT to use SOCKS proxy on windows
+
+```
+git config --global http.proxy socks5h://localhost:[your_client_proxy_port]
+```
+
 
