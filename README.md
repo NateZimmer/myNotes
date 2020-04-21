@@ -3,6 +3,12 @@
 
 # PI Tips
 
+## Remove old files
+
+```console
+find . -name "*.pcap" -mtime +14 -exec rm -f {} \;
+```
+
 
 ## Samba Server 
 
