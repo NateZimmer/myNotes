@@ -46,8 +46,16 @@ ssh -tt -v -L[your_client_proxy_port]:localhost:[tunnel_port] [user_b]@[url_b] s
 
 ### Setting GIT to use SOCKS proxy on windows
 
+To configure git to use a socks proxy, see below: 
+
 ```
 git config --global http.proxy socks5h://localhost:[your_client_proxy_port]
 ```
+
+To clear out this configuration, use the following command: 
+
+```
+git config --global --unset http.proxy
+``
 
 
