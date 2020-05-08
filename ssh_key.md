@@ -56,6 +56,6 @@ To clear out this configuration, use the following command:
 
 ```
 git config --global --unset http.proxy
-``
+```
 
 
