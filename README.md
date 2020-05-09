@@ -3,6 +3,28 @@
 
 # PI Tips
 
+## Network tips 
+
+Set static IP 
+
+```
+ifconfig eth0 192.168.1.1
+```
+
+[View routing table](https://www.unixmen.com/how-to-find-default-gateway-in-linux/): 
+
+```
+route -n
+```
+
+[Set default gateway:](https://danielmiessler.com/study/manually-set-ip-linux/) 
+
+```
+route add default gw 192.168.1.1
+```
+
+
+
 ## Remove old files
 
 ```console
